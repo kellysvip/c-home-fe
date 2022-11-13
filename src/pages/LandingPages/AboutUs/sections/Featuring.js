@@ -24,8 +24,8 @@ import MKBox from "components/MKBox";
 import DefaultCounterCard from "examples/Cards/CounterCards/DefaultCounterCard";
 
 // Images
-import coinbase from "assets/images/logos/gray-logos/logo-coinbase.svg";
-import nasa from "assets/images/logos/gray-logos/logo-nasa.svg";
+import apple from "assets/images/logos/gray-logos/logo-apple.svg";
+import facebook from "assets/images/logos/gray-logos/logo-facebook.svg";
 import netflix from "assets/images/logos/gray-logos/logo-netflix.svg";
 import pinterest from "assets/images/logos/gray-logos/logo-pinterest.svg";
 import spotify from "assets/images/logos/gray-logos/logo-spotify.svg";
@@ -37,10 +37,10 @@ function Featuring() {
       <Container>
         <Grid container spacing={3} sx={{ mb: 12 }}>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={coinbase} alt="coinbase" width="100%" opacity={0.7} />
+            <MKBox component="img" src={apple} alt="coinbase" width="100%" opacity={0.7} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={nasa} alt="nasa" width="100%" opacity={0.7} />
+            <MKBox component="img" src={facebook} alt="nasa" width="100%" opacity={0.7} />
           </Grid>
           <Grid item xs={6} md={4} lg={2}>
             <MKBox component="img" src={netflix} alt="netflix" width="100%" opacity={0.7} />
@@ -58,27 +58,27 @@ function Featuring() {
         <Grid container justifyContent="center" sx={{ textAlign: "center" }}>
           <Grid item xs={12} md={3}>
             <DefaultCounterCard
-              count={5234}
+              count={1152}
               separator=","
-              title="Projects"
-              description="Of “high-performing” level are led by a certified project manager"
+              title="Phòng trọ"
+              description="Đã qua sàn lọc kĩ lưỡng từ C-Home"
             />
           </Grid>
           <Grid item xs={12} md={3}>
             <DefaultCounterCard
-              count={3400}
+              count={10}
               separator=","
               suffix="+"
-              title="Hours"
-              description="That meets quality standards required by our users"
+              title="Years"
+              description="Đội ngũ nhân viên giàu kinh nghiệm trong lĩnh vực"
             />
           </Grid>
           <Grid item xs={12} md={3}>
             <DefaultCounterCard
               count={24}
               suffix="/7"
-              title="Support"
-              description="Actively engage team members that finishes on time"
+              title="Hỗ trợ"
+              description="Hỗ trợ khách hàng mọi lúc, mọi nơi"
             />
           </Grid>
         </Grid>

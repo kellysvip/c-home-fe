@@ -45,6 +45,8 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/bg-presentation.jpg";
+import HomePage from "pages/HomePage";
+
 
 function Presentation() {
   return (
@@ -83,7 +85,7 @@ function Presentation() {
                 },
               })}
             >
-              Material Kit 2 React{" "}
+              C-HOME{" "}
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -92,8 +94,8 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
+              Hệ thống nhà trọ sinh viên khu vực Thủ Đức <br/>
+              UY TÍN - TỰ TIN - NHANH NHẸN
             </MKTypography>
           </Grid>
         </Container>
@@ -109,14 +111,14 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Counters />
-        <Information />
-        <DesignBlocks />
-        <Pages />
-        <Container sx={{ mt: 6 }}>
+        {/* <Counters /> */}
+        {/* <Information /> */}
+        {/* <DesignBlocks /> */}
+        {/* <Pages /> */}
+        {/* <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />
-        </Container>
-        <Container>
+        </Container> */}
+        {/* <Container>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={4}>
               <FilledInfoCard
@@ -159,9 +161,10 @@ function Presentation() {
               />
             </Grid>
           </Grid>
-        </Container>
-        <Testimonials />
-        <Download />
+        </Container> */}
+        {/* <Testimonials /> */}
+        {/* <Download /> */}
+        <HomePage/>
         <MKBox pt={18} pb={6}>
           <Container>
             <Grid container spacing={3}>

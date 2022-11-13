@@ -25,10 +25,11 @@ import MKTypography from "components/MKTypography";
 import HorizontalTeamCard from "examples/Cards/TeamCards/HorizontalTeamCard";
 
 // Images
-import team1 from "assets/images/team-5.jpg";
-import team2 from "assets/images/bruce-mars.jpg";
-import team3 from "assets/images/ivana-squares.jpg";
-import team4 from "assets/images/ivana-square.jpg";
+import team1 from "assets/images/khoa.jpg";
+import team2 from "assets/images/thach.jpg";
+import team3 from "assets/images/lam.jpg";
+import team4 from "assets/images/uyen.jpg";
+import team5 from "assets/images/tri.jpg";
 
 function Team() {
   return (
@@ -58,9 +59,9 @@ function Team() {
             <MKBox mb={1}>
               <HorizontalTeamCard
                 image={team1}
-                name="Emma Roberts"
-                position={{ color: "info", label: "UI Designer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                name="Lê Văn Khoa"
+                position={{ color: "info", label: "CEO" }}
+                description="University of Information Technology - UIT"
               />
             </MKBox>
           </Grid>
@@ -68,9 +69,9 @@ function Team() {
             <MKBox mb={1}>
               <HorizontalTeamCard
                 image={team2}
-                name="William Pearce"
-                position={{ color: "info", label: "Boss" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                name="Đặng Thái Thạch"
+                position={{ color: "info", label: "Leader" }}
+                description="University of Information Technology - UIT"
               />
             </MKBox>
           </Grid>
@@ -78,9 +79,9 @@ function Team() {
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
                 image={team3}
-                name="Ivana Flow"
-                position={{ color: "info", label: "Athlete" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                name="Nguyễn Thành Lâm"
+                position={{ color: "info", label: "CCO" }}
+                description="University of Information Technology - UIT"
               />
             </MKBox>
           </Grid>
@@ -88,9 +89,19 @@ function Team() {
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
                 image={team4}
-                name="Marquez Garcia"
-                position={{ color: "info", label: "JS Developer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                name="Võ Đình Ngọc Uyển"
+                position={{ color: "info", label: "CFO" }}
+                description="University of Information Technology - UIT"
+              />
+            </MKBox>
+          </Grid>
+          <Grid item xs={12} lg={6}>
+            <MKBox mb={{ xs: 1, lg: 0 }}>
+              <HorizontalTeamCard
+                image={team5}
+                name="Nguyễn Hữu Trí"
+                position={{ color: "info", label: "CMO" }}
+                description="University of Information Technology - UIT"
               />
             </MKBox>
           </Grid>

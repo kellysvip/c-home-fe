@@ -25,7 +25,7 @@ import MKButton from "components/MKButton";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
+// import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // About Us page sections
 import Information from "pages/LandingPages/AboutUs/sections/Information";
@@ -35,19 +35,27 @@ import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
 
 // Routes
 import routes from "routes";
-import footerRoutes from "footer.routes";
+// import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/bg-about-us.jpg";
+import { useNavigate } from "react-router-dom";
+// import Button from "assets/theme/components/button";
+
+
 
 function AboutUs() {
+  const navigate = useNavigate()
+  const handleClick = () => {
+    navigate('/presentation')
+  }
   return (
     <>
       <DefaultNavbar
         routes={routes}
         action={{
           type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
+          route: "",
           label: "free download",
           color: "default",
         }}
@@ -89,29 +97,45 @@ function AboutUs() {
                 },
               })}
             >
-              Work with an amazing design
+              Chọn C-HOME, Chọn tổ ấm
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              We&apos;re constantly trying to express ourselves and actualize our dreams. If you
-              have the opportunity to play this game
+              Chúng tôi luôn sẵn sàn mang đến cho bạn nơi ở tốt nhất
             </MKTypography>
-            <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
-              create account
+            <MKButton onClick={handleClick} color="default" sx={{ color: ({ palette: { dark } }) => dark.main, zIndex:"1000" }}>
+              find now
             </MKButton>
             <MKTypography variant="h6" color="white" mt={8} mb={1}>
               Find us on
             </MKTypography>
             <MKBox display="flex" justifyContent="center" alignItems="center">
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+              <MKTypography
+                component="a"
+                variant="body1"
+                color="white"
+                href="https://www.facebook.com/profile.php?id=100086798504055"
+                mr={3}
+              >
                 <i className="fab fa-facebook" />
               </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+              {/* <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
                 <i className="fab fa-instagram" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+              </MKTypography> */}
+              <MKTypography
+                component="a"
+                variant="body1"
+                color="white"
+                href="https://www.youtube.com/results?search_query=C-home"
+                mr={3}
+              >
                 <i className="fab fa-twitter" />
               </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#">
+              <MKTypography
+                component="a"
+                variant="body1"
+                color="white"
+                href="https://coccoc.com/search?query=C+Home"
+              >
                 <i className="fab fa-google-plus" />
               </MKTypography>
             </MKBox>
@@ -132,9 +156,6 @@ function AboutUs() {
         <Featuring />
         <Newsletter />
       </Card>
-      <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
-      </MKBox>
     </>
   );
 }

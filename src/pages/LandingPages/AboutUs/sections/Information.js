@@ -35,8 +35,8 @@ function Information() {
                 <MKBox mb={5}>
                   <DefaultInfoCard
                     icon="public"
-                    title="Fully integrated"
-                    description="We get insulted by others, lose trust for those We get back freezes"
+                    title="Thành Lập"
+                    description="Công ty TNHH C-HOME được thành lập theo giấy phép đăng ký kinh doanh số 20529999…"
                   />
                 </MKBox>
               </Grid>
@@ -44,8 +44,8 @@ function Information() {
                 <MKBox mb={5}>
                   <DefaultInfoCard
                     icon="payments"
-                    title="Payments functionality"
-                    description="We get insulted by others, lose trust for those We get back freezes"
+                    title="Sứ Mệnh"
+                    description="Mang đến cho khách hàng những giải pháp và sự lựa chọn tốt nhất, vì lợi ích của khách hàng, đối tác…"
                   />
                 </MKBox>
               </Grid>
@@ -53,8 +53,8 @@ function Information() {
                 <MKBox mb={{ xs: 5, md: 0 }}>
                   <DefaultInfoCard
                     icon="apps"
-                    title="Prebuilt components"
-                    description="We get insulted by others, lose trust for those We get back freezes"
+                    title="Tầm Nhìn"
+                    description="Xây dựng C-HOME trở thành một doanh nghiệp hàng đầu trong lĩnh vực tư vấn, phân phối và tiếp thị bất động sản …."
                   />
                 </MKBox>
               </Grid>
@@ -62,8 +62,8 @@ function Information() {
                 <MKBox mb={{ xs: 5, md: 0 }}>
                   <DefaultInfoCard
                     icon="3p"
-                    title="Improved platform"
-                    description="We get insulted by others, lose trust for those We get back freezes"
+                    title="Giá Trị"
+                    description="Minh bạch và trung thực để phát triển bền vững. Tin cậy, tôn trọng khách hàng và nhà đầu tư, đối tác. …."
                   />
                 </MKBox>
               </Grid>
@@ -71,7 +71,7 @@ function Information() {
           </Grid>
           <Grid item xs={12} lg={4} sx={{ ml: "auto", mt: { xs: 3, lg: 0 } }}>
             <CenteredBlogCard
-              image="https://images.unsplash.com/photo-1544717302-de2939b7ef71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+              image="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
               title="Get insights on Search"
               description="Website visitors today demand a frictionless user expericence — especially when using search. Because of the hight standards."
               action={{
